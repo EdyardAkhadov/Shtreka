@@ -1,0 +1,22 @@
+.Popular__block{
+    width: 35%;
+    min-width: 270px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid green
+}
+
+.Popular__title{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid green;
+    background-color: rgb(243, 228, 209);
+}
+
+@media (max-width:950px) {
+    .Popular__block{
+        width: 100%;
+    } 
+}

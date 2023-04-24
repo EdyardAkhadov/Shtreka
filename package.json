@@ -1,0 +1,33 @@
+{
+  "name": "streka",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server --watch server/db.json"
+  },
+  "dependencies": {
+    "air-datepicker": "^3.3.5",
+    "axios": "^1.3.5",
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
+    "install": "^0.13.0",
+    "mongoose": "^7.0.4",
+    "nodemon": "^2.0.22",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-datepicker": "^4.11.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.2.0"
+  }
+}
