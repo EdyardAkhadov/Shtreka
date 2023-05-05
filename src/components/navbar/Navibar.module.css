@@ -139,10 +139,9 @@ a::after {
         right: 0;
         width: 100%;
         padding: 0px;
-        background-color: rgb(255, 255, 255);
         z-index: 1;
         margin-top: 0px;
-        background-color: rgb(250, 238, 216);
+        background-color: rgb(248, 246, 243);
     }
 
     .Navibar nav ul li{

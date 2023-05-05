@@ -5,7 +5,6 @@ import DatePicker from "react-datepicker";
 import { registerLocale} from  "react-datepicker";
 import uk from 'date-fns/locale/uk';
 import datePickerStyles from './DatePicker.module.css'
-
 registerLocale('uk', uk)
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -29,12 +28,10 @@ export default function Searchbar() {
   }
 
   let date = day+"."+mounth+"."+year
-  console.log(date)
 
 
   const [station1, setStation1] = useState('');
   const [station2, setStation2] = useState('');
-
   const [isRoute, setIsRoute] = useState(false);
   
   return (

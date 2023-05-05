@@ -1,0 +1,43 @@
+.wrapper{
+    width:100%;
+    padding:40px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__block{
+    width: 60%;
+    border: 2px dashed;
+    padding: 20px;
+}
+
+.photo__block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content__block{
+    margin: 10px 0px;
+}
+
+.content{
+    margin-left: 20px;
+}
+
+.article{
+    margin-bottom: 5px;
+}
+
+.article::before{
+    content: '';
+    margin-right: 20px;
+}
+
+.photo{
+    width: 60%;
+    margin: 10px;
+}

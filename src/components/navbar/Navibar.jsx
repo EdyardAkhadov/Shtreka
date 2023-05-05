@@ -1,7 +1,7 @@
-import React from 'react'
-import styles from './Navibar.module.css'
-import MobileNavigation from './MobileNavigation'
-import Navigation from './Navigation'
+import React from 'react';
+import styles from './Navibar.module.css';
+import MobileNavigation from './MobileNavigation';
+import Navigation from './Navigation';
 import logo from '/public/logo.png';
 import { Link } from 'react-router-dom';
 
