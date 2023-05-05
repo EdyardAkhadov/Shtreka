@@ -7,7 +7,7 @@ export const NewsService ={
     },
 
     async getById(id){
-      const data = await axios.get(`http://localhost:3000/news?=${id}`)
-      return data.data[id-1]
+      const data = await axios.get(`http://localhost:3000/news?id=${id}`)
+      return data.data[0]
     },
 }

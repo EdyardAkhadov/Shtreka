@@ -33,6 +33,140 @@
     ], 
 
     "popular": [
+        {
+            "id":1,
+            "from": "Київ",
+            "to": "Львів"
+        },
+        {
+            "id":2,
+            "from": "Київ",
+            "to": "Дніпро"
+        },
+        {
+            "id":3,
+            "from": "Вінниця",
+            "to": "Київ"
+        },
+        {
+            "id":4,
+            "from": "Львів",
+            "to": "Київ"
+        },
+        {
+            "id":5,
+            "from": "Харків",
+            "to": "Дніпро"
+        },
+        {
+            "id":6,
+            "from": "Івано-Франківськ",
+            "to": "Київ"
+        }
+    ],
 
+    
+    "railwaystation":[
+        {
+            "id": 1,
+            "name" : "Харків-Левада",
+            "date": "everyday",
+            "routes": [
+                {
+                    "number":"6421",
+                    "from": "Харків",
+                    "to": "Занки",
+                    "status": "arrival",
+                    "time": "07.39"
+                },
+                {
+                    "number":"6811",
+                    "from": "Харків",
+                    "to": "Чугуїв",
+                    "status": "arrival",
+                    "time": "08.30"
+                },
+                {
+                    "number":"6173-6174",
+                    "from": "Харків",
+                    "to": "Золочев",
+                    "status": "arrival",
+                    "time": "08.38"
+                },
+                {
+                    "number":"6427",
+                    "from": "Харків",
+                    "to": "Ізюм",
+                    "status": "arrival",
+                    "time": "11.58"
+                },
+                {
+                    "number":"6221",
+                    "from": "Харків",
+                    "to": "Люботин",
+                    "status": "arrival",
+                    "time": "11.25"
+                },
+                {
+                    "number":"6177",
+                    "from": "Харків",
+                    "to": "Золочев",
+                    "status": "arrival",
+                    "time": "14.55"
+                },
+                {
+                    "number":"6431",
+                    "from": "Харків",
+                    "to": "Савинці",
+                    "status": "arrival",
+                    "time": "17.28"
+                },
+                {
+                    "number":"6812",
+                    "from": "Чугуїв",
+                    "to": "Харків", 
+                    "status": "departure",
+                    "time": "07.37"
+                },
+                {
+                    "number":"6173",
+                    "from": "Золочів",
+                    "to": "Харків",
+                    "status": "departure",
+                    "time": "08.14"
+                },
+                {
+                    "number":"6408",
+                    "from": "Ізюм",
+                    "to": "Харків",
+                    "status": "departure",
+                    "time": "09.11"
+                },
+                {
+                    "number":"6222",
+                    "from": "Мерчик",
+                    "to": "Харків",
+                    "status": "departure",
+                    "time": "11.04"
+                },
+                {
+                    "number":"6426",
+                    "from": "Ізюм",
+                    "to": "Харків",
+                    "status": "departure",
+                    "time": "15.29"
+                }
+            ]
+        }
+    ],
+
+    "routes" :[
+        {
+            "from":"Київ",
+            "to":"Львів",
+            "date": "05.05",
+            "time": "10:00",
+            "price": "1200"
+        }
     ]
 }

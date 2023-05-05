@@ -9,10 +9,29 @@
 
 .Popular__title{
     width: 100%;
+    margin: 0;
     padding: 10px 0px 10px 10px;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 2px solid green;
     background-color: rgb(243, 228, 209);
+    font-weight: 900;
+}
+
+.populars__container{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px dashed #136809;
+}
+
+.populars__container:last-child{
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+}
+
+.from, .to{
+    font-size: 20px;
 }
 
 @media (max-width:950px) {

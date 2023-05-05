@@ -1,0 +1,49 @@
+.routes__container{
+    width: 800px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-around;
+    padding: 10px;    
+    border: 2px solid #136809;
+    background-color: rgb(243, 228, 209);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.column{
+    border-right: 2px solid #136809;
+}
+
+.column:last-child{
+    border-right: 0px;
+}
+
+.table__header{
+    height: 50px;
+    text-align: center;
+    border-bottom: 2px solid #136809;
+    margin: 0;
+    font-weight: 600;
+}
+
+.row{
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid #136809;
+}
+
+.title{
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 3px #136809;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    padding:40px 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

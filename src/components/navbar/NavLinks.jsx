@@ -1,22 +1,15 @@
 import React from 'react'
 import styles from './Navibar.module.css'
+import { Link } from 'react-router-dom';
 
 const NavLinks = (props) => {
   return (
     <ul className={styles.Links}>
         <li>
-            <a href="/" className={styles.Links__button}>Розклад</a>
-        </li>
-
-        <li>
-            <a href="/News" className={styles.Links__button}>Новини</a>
-        </li>
-
-        <li>
-            <a href="/Travels" className={styles.Links__button}>Куди поїхати?</a>
+            <Link to="/" className={styles.Links__button}>Розклад</Link>
         </li>
         <li>
-            <a href="/Client" className={styles.Links__button}>Особистий кабінет</a>
+            <Link to="/Client" className={styles.Links__button}>Особистий кабінет</Link>
         </li>
   </ul>
   )

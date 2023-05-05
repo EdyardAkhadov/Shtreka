@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
 import { NewsService } from '../../services/news.service'
-import News from './News'
+import Navibar from '../navbar/Navibar'
 
 const NewsPage = () => {
     const {id} = useParams()
@@ -15,7 +15,6 @@ const NewsPage = () => {
           const data = await NewsService.getById(id)
           console.log(data)
           setNews(data)
-        
         } 
         newsData()
       }, [id]);
@@ -24,7 +23,8 @@ const NewsPage = () => {
 
   return (
     <div>
-      <p>{news.title}</p>
+      <Navibar/>
+      <p>{news.id}</p>
     </div>
   )
 }

@@ -17,7 +17,7 @@ function Home() {
         <News/>
         <Popular/>
         </div>
-        <Footer></Footer>
+        <Footer/>
     </div>
   )
 }
