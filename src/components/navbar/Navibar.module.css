@@ -44,6 +44,7 @@ a::after {
     align-items: center;
     justify-content: space-between;
     min-height: 100px;
+    background-color: rgb(248, 246, 243);
 }
 
 .Logo{

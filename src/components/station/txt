@@ -1,0 +1,49 @@
+            <div className={styles.column}>
+              <p className={styles.table__header}>Номер потягу</p>
+              {station.map(someroutes => {
+                return(
+                  <div className={styles.row}>{someroutes.number}</div>
+                )
+              })}
+            </div>
+
+            <div  className={styles.column}>
+              <p className={styles.table__header}>Станція відправки</p>
+              {station.map(someroutes => {
+                return(
+                  <div className={styles.row}>{someroutes.from}</div>
+                )
+              })}
+            </div>
+            
+            <div  className={styles.column}>
+              <p className={styles.table__header}>Станція прибуття</p>
+              {station.map(someroutes => {
+                return(
+                  <div className={styles.row}>{someroutes.to}</div>
+                )
+              })}
+            </div>
+
+            <div className={styles.column}>
+              <p className={styles.table__header}>Час відправки з {name}</p>
+              {station.map(someroutes => {
+              return(
+                <div className={styles.row}>{someroutes.status === "arrival" && <div className={styles.row}>{someroutes.time}</div>}</div>
+              )
+              })}
+            </div>
+
+            <div className={styles.column}>
+            <p className={styles.table__header}>Час прибуття на {name}</p>
+              {station.map(someroutes => {
+              return(
+                <div>{someroutes.status === "arrival" && <div className={styles.row}> </div>}</div>
+              )
+              })}
+              {station.map(someroutes => {
+              return(
+                <div>{someroutes.status === "departure" && <div className={styles.row}>{someroutes.time}</div>}</div>
+              )
+              })}
+            </div>

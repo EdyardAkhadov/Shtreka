@@ -10,6 +10,7 @@
     width: 60%;
     border: 2px dashed;
     padding: 20px;
+    background-color: rgb(250, 240, 226);
 }
 
 .photo__block{
@@ -38,6 +39,30 @@
 }
 
 .photo{
-    width: 60%;
+    width: 80%;
     margin: 10px;
+}
+
+@media (max-width:1330px){
+    .wrapper{
+        padding: 10% 2%;
+      } 
+      
+      .news__block{
+        min-width: 500px;
+          flex-direction: column;
+      }
+
+      .photo{
+        width: 100%;
+     }
+}
+
+@media (max-width:500px) {
+    .news__block{
+        min-width: 250px;
+        width: 100%;
+    }
+
+    
 }

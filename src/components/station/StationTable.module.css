@@ -1,8 +1,18 @@
+.wrapper{
+    display: flex;
+    width: 100%;
+    padding:40px 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .routes__container{
-    width: 800px;
+    width: 50%;
     background-color: aqua;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 10px;    
     border: 2px solid #136809;
@@ -19,31 +29,131 @@
     border-right: 0px;
 }
 
+.table__header, .route__block{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-around;
+}
+
+
 .table__header{
-    height: 50px;
+    min-height: 50px;
     text-align: center;
-    border-bottom: 2px solid #136809;
     margin: 0;
     font-weight: 600;
 }
 
+
+.Header__item{
+    border-top: 3px solid #136809;
+    padding: 5px;
+    margin: 0;  
+    
+}
+
+.Header__item, .row{
+    border-left: 3px solid #136809;
+    border-bottom: 3px solid #136809;
+}
+
 .row{
-    height: 40px;
     text-align: center;
-    border-bottom: 2px solid #136809;
+    position: relative;
+    padding: 5px;
+}
+
+.row:last-child, .Header__item:last-child{
+    border-right: 3px solid #136809;
+}
+
+.route__block{
 }
 
 .title{
+    text-align: center;
     margin-bottom: 10px;
     text-shadow: 0px 0px 3px #136809;
 }
 
-.wrapper{
-    display: flex;
+.block_title{
     width: 100%;
-    padding:40px 10%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width:1200px) {
+
+    .wrapper{
+        padding: 10% 2%;
+    }
+    .routes__container{
+        min-width: 500px;
+    }
+
+    .table__header{
+        display: none;
+    }
+
+    .route__block{
+        grid-template-columns: 100%;
+        margin-bottom: 10px;
+    }
+
+    .row{
+        text-align: right;
+        border-left: 3px solid #136809;
+        border-right: 3px solid #136809;
+        font-weight: 600;
+    }
+
+    .row:first-child{
+        border-top: 3px solid #136809;
+    }
+    
+
+    .row:nth-child(1)::before{
+        content: "Номер потягу: ";
+    }
+
+    .row:nth-child(2)::before{
+        content: "Станція відправки: ";
+    }
+
+    .row:nth-child(3)::before{
+        content: "Станція прибуття: ";
+    }
+
+    .row:nth-child(4)::before{
+        content: "Час: ";
+    }
+
+    .row:nth-child(1)::before,
+    .row:nth-child(2)::before,
+    .row:nth-child(3)::before,
+    .row:nth-child(4)::before{
+        position: absolute;
+        left: 10px;
+        top: 0;
+    }
+}
+
+@media (max-width:659px) {
+    .routes__container{
+        min-width: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width:350px) {
+    .routes__container{
+        min-width: 250px;
+        width: 100%;
+    }
+
+    .row{
+        height: 60px;
+        text-align: right;
+        padding-top: 35px;
+    }
 }

@@ -22,6 +22,21 @@
     grid-template-columns: 70% 30%;
     border: 3px solid #136809;
     margin-bottom: 10px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.ticket__card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 235, 215, 0.711);
+
+    z-index: -1;
 }
 
 .ticket__card:last-child{
@@ -43,20 +58,19 @@
 .from, .to, .price, .number, .time{
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
+}
+
+.header{
+    font-weight: 800;
 }
 
 .from::before{
     content: 'Візправка з: ';
-    font-size: 15px;
-    margin-right: 5px;
-    font-weight: 100;
 }
 
 .to::before{
     content: 'Прибуває в: ';
-    font-size: 15px;
-    margin-right: 5px;
-    font-weight: 100;
 }
 
 .forTime{
@@ -68,17 +82,10 @@
 .time::before{
     content: 'о ';
     font-size: 20px;
-    margin-right: 5px;
-    font-weight: 100;
 }
-
-
 
 .number::before{
     content: 'Номер потяга: ';
-    font-size: 15px;
-    margin-right: 5px;
-    font-weight: 100;
 }
 
 .details{
@@ -99,8 +106,39 @@
 
 .price::before{
     content: "Вартість купе:";
+}
+
+.from::before, .to::before, .price::before, .number::before, .time::before{
     font-size: 15px;
     margin-right: 5px;
-    font-weight: 100;
+    font-weight: 900;
+}
+
+@media (max-width:1330px){
+    .wrapper{
+        padding: 10% 2%;
+      } 
+      
+      .ticket__container{
+        min-width: 500px;
+          flex-direction: column;
+      }
+  
+      .ticket__card{
+          grid-template-columns: 100%;
+          grid-template-rows: 55% 30%;
+      }
+  
+      .details{
+          border-left: none;
+          border-top: 3px dashed #136809;
+      }
+}
+
+@media (max-width:500px) {
+    .ticket__container{
+        min-width: 250px;
+        width: 100%;
+    }
 }
 

@@ -4,7 +4,8 @@
     min-height: 200px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border: 2px solid green
+    border: 2px solid #136809;
+    background-color: rgb(250, 240, 226);
 }
 
 .Popular__title{
@@ -12,7 +13,7 @@
     margin: 0;
     padding: 10px 0px 10px 10px;
     border-radius: 10px 10px 0px 0px;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #136809;
     background-color: rgb(243, 228, 209);
     font-weight: 900;
 }

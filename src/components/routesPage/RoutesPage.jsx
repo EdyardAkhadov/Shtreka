@@ -27,9 +27,9 @@ export default function RoutesPage() {
         <div className={styles.ticket__container}>
         {routes.map(someroutes => {
             return(  
-              <div className={styles.ticket__card}>
+              <div className={styles.ticket__card} style={{backgroundImage:`url(${someroutes.background})`}}>
                 <div className={styles.information}>
-                  <h4>Квиток</h4>
+                  <h4 className={styles.header}>Квиток</h4>
                   <div className={styles.from__to}>
                     <div className={styles.forTime}>
                       <p className={styles.from}>{someroutes.from}</p>

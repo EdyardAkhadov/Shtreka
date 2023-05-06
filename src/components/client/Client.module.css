@@ -1,6 +1,5 @@
 .wrapper{
     width: 100%;
-    margin-bottom: 15%;
     margin-top: 10%;
     display: flex;
     align-items: center;
@@ -12,12 +11,17 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 20px;
 }
 
-.log__button{
+.log__button, .chosen__button{
     width: 45%;
-    border: 2px solid green;
+    border: 2px solid #136809;
     border-radius: 15px;
+}
+
+.chosen__button{
+    background-color: #b6eeb0;
 }
 
 
@@ -25,6 +29,9 @@
     padding: 20px;
     border: 2px solid ;
     border-radius: 15px;
+    min-width: 350px;
+    width: 20%;
+    background-color: rgb(243, 228, 209);
 }
 
 .form{
@@ -34,12 +41,16 @@
     justify-content: center;
 }
 
+.form__button{
+    border-radius: 15px;
+}
+
 label{
     margin-right: 10px;
 }
 
 .input__container label{
-    width: 100px;
+    width: 20%;
 }
 
 .input__container input{
@@ -54,4 +65,57 @@ label{
     margin: 10px 0px;
     display: flex;
     justify-content: space-between;
+}
+
+.check__container{
+    position: relative;
+    display: flex;
+    margin: 10px;
+}
+
+.check__container input{
+    margin-right: 10px;
+}
+
+.check__container label {
+    max-width: 280px;
+}
+
+.check__container label a{
+    color: #136809;
+    text-decoration:underline;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width:400px) {
+    .form__container{
+        min-width: 250px;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .check__container label {
+       width: 100%;
+    }
+
+    .input__container input{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width:320px) {
+    .log__buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .log__button, .chosen__button{
+        width: 60%;
+        margin-bottom: 10px;
+    }
 }
