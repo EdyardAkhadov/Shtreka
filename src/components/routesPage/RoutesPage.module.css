@@ -115,6 +115,12 @@
     font-weight: 900;
 }
 
+.footer{
+    width:100vw;
+    position: absolute;
+    bottom: 100px;
+}
+
 @media (max-width:1330px){
     .wrapper{
         padding: 10% 2%;
@@ -140,6 +146,11 @@
     .ticket__container{
         min-width: 250px;
         width: 100%;
+    }
+
+    .footer{
+        position: relative;
+        margin-top: 100px;
     }
 }
 
