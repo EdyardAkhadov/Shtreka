@@ -1,7 +1,14 @@
 .footer__continer{
-    width: 99vw;
+    width: 100vw;
     background-color: #15172b;
-    height: 200px;
+    height: 100px;
     max-height: 200px;
     position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__continer p{
+    color: rgb(240, 248, 255);
 }

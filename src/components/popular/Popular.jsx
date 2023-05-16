@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './Popular.module.css'
 import { PopularService } from '../../services/popular.service'
 import { Link } from 'react-router-dom'
-
+import trainIcon from '/public/trainIcon.png'
 
 export default function Popular() {
   const[populars, setPopulars] = useState([])
@@ -25,7 +25,7 @@ export default function Popular() {
             return(
               <Link to={`Route/${somepopulars.from}/${somepopulars.to}/everyday`} key={somepopulars.id} className={styles.populars__container}>
                   <p className={styles.from}>{somepopulars.from}</p>
-                  <img src='public/trainIcon.png'></img>
+                  <img src={`${trainIcon}`}></img>
                   <p className={styles.to}>{somepopulars.to}</p>
               </Link>
             )

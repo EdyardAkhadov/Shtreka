@@ -7,7 +7,7 @@ import uk from 'date-fns/locale/uk';
 import datePickerStyles from './DatePicker.module.css'
 registerLocale('uk', uk)
 import "react-datepicker/dist/react-datepicker.css";
-
+import backgroundSearchbar from '/public/backgroundSearchbar.png'
 
 export default function Searchbar() {
 
@@ -35,7 +35,7 @@ export default function Searchbar() {
   const [isRoute, setIsRoute] = useState(false);
   
   return (
-    <div className={styles.Searchbar}>
+    <div className={styles.Searchbar} style={{backgroundImage:`url(${backgroundSearchbar})`}}>
       <div className={styles.Searchbar__items}>
         <div className={styles.Searchbar__controller}>
           <button onClick={() => setIsRoute(false)} 
@@ -77,8 +77,8 @@ export default function Searchbar() {
             <label htmlFor="DatePicker" className={datePickerStyles.placeholder}>Дата:</label>
           </div>
 
-          <Link to={`/Stations/${station1}`}><button className={isRoute ? styles.invisible : styles.Searchbar__button }>Пошук</button></Link>
-          <Link to={`/Route/${station1}/${station2}/${date}`}><button className={isRoute ? styles.Searchbar__button: styles.invisible}>Пошук</button></Link>
+          <Link className={styles.link__button } to={`/Stations/${station1}`}><button className={isRoute ? styles.invisible : styles.Searchbar__button }>Пошук</button></Link>
+          <Link className={styles.link__button } to={`/Route/${station1}/${station2}/${date}`}><button className={isRoute ? styles.Searchbar__button: styles.invisible}>Пошук</button></Link>
         
         </div>
       </div>

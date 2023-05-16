@@ -1,5 +1,4 @@
 .Searchbar{
-  background-image: url('public/CarouselBackground.png');
   background-size: cover ;
   background-repeat: no-repeat;
   background-position: center;
@@ -227,6 +226,12 @@
 /* MEDIA */
 
 @media (max-width: 1770px) {
+  
+  .link__button{
+    text-align: center;
+    width: 100%;
+  }
+
   .input_container__to, .input_container__from, .input_container__date{
     width: 100%;
   }
